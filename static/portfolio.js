@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="finance-stat"><span>Start at 28</span><span>Less growth time</span></div>
         </div>
       </div>`,
-    'AI Agents & MCP Toolkit': `
+    'MCP Agent Workflow': `
       <div class="project-preview">
         <div class="preview-label">Agent Tool Workflow</div>
         <div class="preview-window">
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const linkLabels = {
-    'AI Agents & MCP Toolkit': 'Open MCP code',
+    'MCP Agent Workflow': 'Open MCP code',
     'AI Study Buddy with RAG': 'Open RAG app code',
     'AI Games: Tic-Tac-Toe & Hangman': 'Open game code'
   };
