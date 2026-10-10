@@ -1,17 +1,29 @@
 # Vishal Builds
 
-A standalone Flask portfolio for Vishal Ghosh featuring five projects across AI, fintech, data visualization, RAG, agents, and AI-powered games.
+Personal portfolio for Vishal Ghosh, focused on projects across artificial intelligence, fintech, data visualization, RAG, agent workflows, and AI-powered games.
 
-## Run in GitHub Codespaces
+## Projects
 
-1. Open this repository in a Codespace.
-2. Wait for the dev container to install dependencies.
-3. Run:
+1. **Hello World + AI Chat** — Flask web app with an AI chatbot.
+2. **My Financial Future** — financial dashboard with interactive visualizations.
+3. **MCP Agent Workflow** — exploration of MCP tools and agent/tool interaction.
+4. **AI Study Buddy with RAG** — PDF upload, chunking, embeddings, retrieval, grounded Q&A, voice, and image features.
+5. **AI Games** — Tic-Tac-Toe and Hangman experiences with AI-powered gameplay features.
+
+## Tech
+
+Flask, Python, HTML, CSS, JavaScript, JSON, Chart.js, Azure OpenAI, RAG, embeddings, and GitHub Codespaces.
+
+## Run locally or in Codespaces
 
 ```bash
 python app.py
 ```
 
-4. Open forwarded port **5001** in the browser.
+Then open forwarded port **5001**.
 
-The portfolio entries are stored in `data/entries.json`.
+## Contact
+
+- GitHub: https://github.com/vishalg7443-gif
+- LinkedIn: https://www.linkedin.com/in/vishal-gh/
+- Email: vishalg7443@gmail.com
