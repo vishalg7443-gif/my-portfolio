@@ -1,40 +1,27 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ entry.title }} | Vishal Builds{% endblock %}
+{% block title %}{{ entry.title }} | Vishal Ghosh{% endblock %}
 
 {% block content %}
 <section class="section entry-shell">
-    <article class="entry-card">
-        <div class="project-meta">
-            <span class="tag">Project {{ entry_id + 1 }}</span>
-            {% for tag in get_entry_tags(entry) %}
-            <span class="tag">{{ tag }}</span>
-            {% endfor %}
-            {% if entry.date %}
-            <span class="tag">{{ entry.date }}</span>
-            {% endif %}
-        </div>
-        <h1>{{ entry.title }}</h1>
+  <article class="entry-card">
+    <div class="project-meta">
+      <span class="tag">Project {{ entry_id + 1 }}</span>
+      {% for tag in get_entry_tags(entry) %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+    <h1>{{ entry.title }}</h1>
 
-        <h2>What I Built</h2>
-        <p>{{ entry.summary }}</p>
+    <h2>Overview</h2>
+    <p>{{ entry.summary }}</p>
 
-        {% if entry.learned %}
-        <h2>What I Learned</h2>
-        <p>{{ entry.learned }}</p>
-        {% endif %}
+    {% if entry.learned %}<h2>Skills & Concepts</h2><p>{{ entry.learned }}</p>{% endif %}
+    {% if entry.coolest %}<h2>Highlight</h2><p>{{ entry.coolest }}</p>{% endif %}
 
-        {% if entry.coolest %}
-        <h2>Coolest Thing</h2>
-        <p>{{ entry.coolest }}</p>
-        {% endif %}
-
-        {% if entry.screenshot %}
-        <h2>Screenshot</h2>
-        <img src="{{ entry.screenshot }}" alt="Screenshot for {{ entry.title }}" style="border-radius: 16px; border: 1px solid rgba(255,255,255,0.12); margin-top: 10px;">
-        {% endif %}
-
-        <a href="/#projects" class="back-link">← Back to all projects</a>
-    </article>
+    <div class="hero-actions" style="margin-top:28px;">
+      {% if entry.project_link %}<a class="button button-primary" href="/{{ entry.project_link }}" target="_blank" rel="noreferrer">Open Demo</a>{% endif %}
+      {% if entry.github_link %}<a class="button button-secondary" href="{{ entry.github_link }}" target="_blank" rel="noreferrer">View Source</a>{% endif %}
+      <a class="button button-secondary" href="/#projects">Back to Projects</a>
+    </div>
+  </article>
 </section>
 {% endblock %}
