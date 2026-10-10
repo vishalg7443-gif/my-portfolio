@@ -22,9 +22,7 @@
     "learned": "I learned how MCP servers expose Python functions as tools, how clear tool descriptions guide an agent's decisions, and how an agent can discover and call tools dynamically.",
     "coolest": "The coolest part was seeing the AI decide when to call a tool and use the result as part of its response instead of acting like a normal chatbot.",
     "screenshot": "",
-    "tags": ["AI", "MCP", "Agents"],
-    "project_link": "https://github.com/vishalg7443-gif/lesson-3-vishalg7443-gif/blob/main/share.py",
-    "github_link": "https://github.com/vishalg7443-gif/lesson-3-vishalg7443-gif"
+    "tags": ["AI", "MCP", "Agents"]
   },
   {
     "title": "AI Study Buddy with RAG",
@@ -33,9 +31,7 @@
     "learned": "I learned how RAG works end to end: extracting and chunking documents, creating embeddings, using cosine similarity to retrieve relevant context, and chaining speech and image models into the app.",
     "coolest": "The coolest part was asking a question about an uploaded PDF and seeing the app retrieve the most relevant chunks, answer from them, and even read the answer aloud.",
     "screenshot": "",
-    "tags": ["AI", "RAG", "Flask"],
-    "project_link": "https://github.com/vishalg7443-gif/lesson-4-vishalg7443-gif/blob/master/app.py",
-    "github_link": "https://github.com/vishalg7443-gif/lesson-4-vishalg7443-gif"
+    "tags": ["AI", "RAG", "Flask"]
   },
   {
     "title": "AI Games: Tic-Tac-Toe & Hangman",
@@ -44,8 +40,6 @@
     "learned": "I learned how to manage game state with Flask sessions, persist scores in JSON, request structured AI output and validate it before using it, and add safe fallbacks so gameplay keeps working if an AI call fails.",
     "coolest": "The coolest part was making the AI part of the game itself—choosing moves, giving hints and commentary, and generating trash talk without breaking the core game logic.",
     "screenshot": "",
-    "tags": ["AI", "Games", "Flask"],
-    "project_link": "https://github.com/vishalg7443-gif/lesson-5-vishalg7443-gif/blob/master/app.py",
-    "github_link": "https://github.com/vishalg7443-gif/lesson-5-vishalg7443-gif"
+    "tags": ["AI", "Games", "Flask"]
   }
 ]
