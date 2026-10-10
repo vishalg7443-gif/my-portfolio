@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='resume.css') }}">
 </head>
 <body>
     <div class="site-shell">
@@ -25,7 +26,7 @@
                 <a href="/#interests">Interests</a>
                 <a href="/#projects">Projects</a>
                 <a href="/#journey">Journey</a>
-                <a href="/add">Add Entry</a>
+                <a href="/#contact">Contact</a>
             </nav>
         </header>
 
@@ -33,16 +34,16 @@
             {% block content %}{% endblock %}
         </main>
 
-        <footer class="site-footer">
+        <footer class="site-footer" id="contact">
             <div>
                 <p class="footer-name">Vishal Ghosh</p>
                 <p class="footer-tagline">Building at the intersection of AI, business, and technology.</p>
                 <p class="footer-meta">Built with Flask, HTML, CSS, GitHub, and curiosity.</p>
             </div>
-            <div class="footer-links" aria-label="Personal links placeholders">
-                <span>GitHub: Placeholder</span>
-                <span>LinkedIn: Placeholder</span>
-                <span>Email: Placeholder</span>
+            <div class="footer-links" aria-label="Personal links">
+                <a href="https://github.com/vishalg7443-gif" target="_blank" rel="noreferrer">GitHub: vishalg7443-gif</a>
+                <a href="https://www.linkedin.com/in/vishal-gh/" target="_blank" rel="noreferrer">LinkedIn: Vishal Ghosh</a>
+                <a href="mailto:vishalg7443@gmail.com">Email: vishalg7443@gmail.com</a>
             </div>
         </footer>
     </div>
@@ -66,5 +67,6 @@
             });
         }
     </script>
+    <script src="{{ url_for('static', filename='portfolio.js') }}"></script>
 </body>
 </html>
