@@ -12,6 +12,10 @@
 .footer-links a:hover,
 .footer-links a:focus-visible { text-decoration: underline; }
 
+/* Hide the profile card entirely on the public/resume-facing site. */
+.profile-card { display: none !important; }
+.about-grid { grid-template-columns: 1fr !important; }
+
 .project-image {
   min-height: 190px;
   padding: 0;
