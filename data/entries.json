@@ -23,6 +23,7 @@
     "coolest": "The coolest part was seeing the AI decide when to call a tool and use the result as part of its response instead of acting like a normal chatbot.",
     "screenshot": "",
     "tags": ["AI", "MCP", "Agents"],
+    "project_link": "https://github.com/vishalg7443-gif/lesson-3-vishalg7443-gif/blob/main/share.py",
     "github_link": "https://github.com/vishalg7443-gif/lesson-3-vishalg7443-gif"
   },
   {
@@ -33,6 +34,7 @@
     "coolest": "The coolest part was asking a question about an uploaded PDF and seeing the app retrieve the most relevant chunks, answer from them, and even read the answer aloud.",
     "screenshot": "",
     "tags": ["AI", "RAG", "Flask"],
+    "project_link": "https://github.com/vishalg7443-gif/lesson-4-vishalg7443-gif/blob/master/app.py",
     "github_link": "https://github.com/vishalg7443-gif/lesson-4-vishalg7443-gif"
   },
   {
@@ -43,6 +45,7 @@
     "coolest": "The coolest part was making the AI part of the game itself—choosing moves, giving hints and commentary, and generating trash talk without breaking the core game logic.",
     "screenshot": "",
     "tags": ["AI", "Games", "Flask"],
+    "project_link": "https://github.com/vishalg7443-gif/lesson-5-vishalg7443-gif/blob/master/app.py",
     "github_link": "https://github.com/vishalg7443-gif/lesson-5-vishalg7443-gif"
   }
 ]
