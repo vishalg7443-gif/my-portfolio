@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Hello World + AI Chat",
+    "date": "2026-06-01",
+    "summary": "Built my first Flask app with a profile page and an AI chatbot.",
+    "learned": "I learned how to create routes, use Jinja templates, and connect to the OpenAI API. I also learned how HTML forms send data back to Python.",
+    "coolest": "When my chatbot started actually responding to my messages!",
+    "screenshot": ""
+  },
+  {
+    "title": "My Financial Future Data & Visualization",
+    "date": "2026-07-13",
+    "summary": "I built a Flask financial dashboard that uses interactive charts to display budgeting and other financial necessities.",
+    "learned": "I learned how to organize information in JSON files, send data from Flask to HTML templates, and use Chart.js to turn numbers that I input into actual charts. I also learned how forms can collect information and calculate personalized results.",
+    "coolest": "The coolest part was comparing someone who starts investing at age 18 with someone who starts at age 28 and seeing how much compound interest rewards starting early, because it amounted to a mass amount of difference in money.",
+    "screenshot": "/static/images/uploads/1783985367733_image.png"
+  },
+  {
+    "title": "AI Agents & MCP Toolkit",
+    "date": "2026-07-14",
+    "summary": "Built MCP tools and an AI agent workflow that lets an AI discover and call tools instead of only generating text.",
+    "learned": "I learned how MCP servers expose Python functions as tools, how clear tool descriptions guide an agent's decisions, and how an agent can discover and call tools dynamically.",
+    "coolest": "The coolest part was seeing the AI decide when to call a tool and use the result as part of its response instead of acting like a normal chatbot.",
+    "screenshot": "",
+    "tags": ["AI", "MCP", "Agents"],
+    "github_link": "https://github.com/vishalg7443-gif/lesson-3-vishalg7443-gif"
+  },
+  {
+    "title": "AI Study Buddy with RAG",
+    "date": "2026-07-16",
+    "summary": "Built a Flask study assistant that uploads PDFs, chunks and embeds the text, retrieves relevant passages, and answers questions grounded in the document, with voice and image features.",
+    "learned": "I learned how RAG works end to end: extracting and chunking documents, creating embeddings, using cosine similarity to retrieve relevant context, and chaining speech and image models into the app.",
+    "coolest": "The coolest part was asking a question about an uploaded PDF and seeing the app retrieve the most relevant chunks, answer from them, and even read the answer aloud.",
+    "screenshot": "",
+    "tags": ["AI", "RAG", "Flask"],
+    "github_link": "https://github.com/vishalg7443-gif/lesson-4-vishalg7443-gif"
+  },
+  {
+    "title": "AI Games: Tic-Tac-Toe & Hangman",
+    "date": "2026-07-21",
+    "summary": "Built AI-powered Flask games, including Tic-Tac-Toe with an AI opponent, coaching hints, leaderboard and game recaps, plus a custom Hangman game with AI-generated trash talk.",
+    "learned": "I learned how to manage game state with Flask sessions, persist scores in JSON, request structured AI output and validate it before using it, and add safe fallbacks so gameplay keeps working if an AI call fails.",
+    "coolest": "The coolest part was making the AI part of the game itself—choosing moves, giving hints and commentary, and generating trash talk without breaking the core game logic.",
+    "screenshot": "",
+    "tags": ["AI", "Games", "Flask"],
+    "github_link": "https://github.com/vishalg7443-gif/lesson-5-vishalg7443-gif"
+  }
+]

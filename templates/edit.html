@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Project | Vishal Builds{% endblock %}
+
+{% block content %}
+<section class="section entry-shell">
+    <div class="section-heading">
+        <h2>Edit project entry</h2>
+        <p>Update the details of your project.</p>
+    </div>
+
+    <div class="form-card">
+        {% if error %}
+        <div class="error-message">{{ error }}</div>
+        {% endif %}
+
+        <form method="POST" action="/edit/{{ entry_id }}" enctype="multipart/form-data">
+            <label for="title">Project title *</label>
+            <input type="text" id="title" name="title" placeholder="What did you build?" value="{{ entry.title }}" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" value="{{ entry.date or today }}">
+
+            <label for="summary">What I built *</label>
+            <textarea id="summary" name="summary" placeholder="Describe the project or experience in a few sentences" required>{{ entry.summary }}</textarea>
+
+            <label for="learned">What I learned</label>
+            <textarea id="learned" name="learned" placeholder="Share the main lesson or insight">{{ entry.learned or '' }}</textarea>
+
+            <label for="coolest">Coolest thing</label>
+            <input type="text" id="coolest" name="coolest" placeholder="What felt most exciting or memorable?" value="{{ entry.coolest or '' }}">
+
+            <label for="screenshot">Project image (optional)</label>
+            {% if entry.screenshot %}
+            <div style="margin-bottom: 10px;">
+                <p style="font-size: 0.9em; color: var(--text-secondary);">Current image:</p>
+                <img src="{{ entry.screenshot }}" alt="Current screenshot" style="border-radius: 8px; max-width: 200px; max-height: 150px;">
+            </div>
+            {% endif %}
+            <input type="file" id="screenshot" name="screenshot" accept="image/*">
+            <p style="font-size: 0.9em; color: var(--text-secondary);">Upload a new image to replace the current one (optional)</p>
+
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

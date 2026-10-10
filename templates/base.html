@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vishal Ghosh's portfolio website featuring projects at the intersection of AI, finance, and technology.">
+    <title>{% block title %}Vishal Builds{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="site-shell">
+        <header class="site-header">
+            <a class="brand" href="/#top" aria-label="Vishal Builds home">Vishal Builds</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="/#top">Home</a>
+                <a href="/#about">About</a>
+                <a href="/#interests">Interests</a>
+                <a href="/#projects">Projects</a>
+                <a href="/#journey">Journey</a>
+                <a href="/add">Add Entry</a>
+            </nav>
+        </header>
+
+        <main id="top">
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer class="site-footer">
+            <div>
+                <p class="footer-name">Vishal Ghosh</p>
+                <p class="footer-tagline">Building at the intersection of AI, business, and technology.</p>
+                <p class="footer-meta">Built with Flask, HTML, CSS, GitHub, and curiosity.</p>
+            </div>
+            <div class="footer-links" aria-label="Personal links placeholders">
+                <span>GitHub: Placeholder</span>
+                <span>LinkedIn: Placeholder</span>
+                <span>Email: Placeholder</span>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.site-nav');
+
+        if (toggle && nav) {
+            toggle.addEventListener('click', () => {
+                const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', String(!expanded));
+                nav.classList.toggle('is-open');
+            });
+
+            nav.querySelectorAll('a').forEach((link) => {
+                link.addEventListener('click', () => {
+                    toggle.setAttribute('aria-expanded', 'false');
+                    nav.classList.remove('is-open');
+                });
+            });
+        }
+    </script>
+</body>
+</html>

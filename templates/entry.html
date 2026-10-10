@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ entry.title }} | Vishal Builds{% endblock %}
+
+{% block content %}
+<section class="section entry-shell">
+    <article class="entry-card">
+        <div class="project-meta">
+            {% for tag in get_entry_tags(entry) %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+            {% if entry.date %}
+            <span class="tag">{{ entry.date }}</span>
+            {% endif %}
+        </div>
+        <h1>{{ entry.title }}</h1>
+        <p class="date">{{ entry.date or 'Undated' }}</p>
+
+        <h2>What I Built</h2>
+        <p>{{ entry.summary }}</p>
+
+        {% if entry.learned %}
+        <h2>What I Learned</h2>
+        <p>{{ entry.learned }}</p>
+        {% endif %}
+
+        {% if entry.coolest %}
+        <h2>Coolest Thing</h2>
+        <p>{{ entry.coolest }}</p>
+        {% endif %}
+
+        {% if entry.screenshot %}
+        <h2>Screenshot</h2>
+        <img src="{{ entry.screenshot }}" alt="Screenshot for {{ entry.title }}" style="border-radius: 16px; border: 1px solid rgba(255,255,255,0.12); margin-top: 10px;">
+        {% endif %}
+
+        <div style="display: flex; gap: 10px; margin-top: 30px;">
+            <a href="/" class="back-link">← Back to all projects</a>
+            <a href="/edit/{{ entry_id }}" style="color: var(--accent); text-decoration: none; font-weight: 500;">Edit</a>
+            <form method="POST" action="/delete/{{ entry_id }}" style="margin: 0; display: inline;" onsubmit="return confirm('Are you sure you want to delete this project?');">
+                <button type="submit" style="background: none; border: none; color: #ff6b6b; cursor: pointer; font-weight: 500; text-decoration: none; padding: 0;">Delete</button>
+            </form>
+        </div>
+    </article>
+</section>
+{% endblock %}
