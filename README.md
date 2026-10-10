@@ -1,26 +1,39 @@
-# Vishal Builds
+# Vishal Ghosh — Portfolio
 
-Personal portfolio for Vishal Ghosh, focused on projects across artificial intelligence, fintech, data visualization, RAG, agent workflows, and AI-powered games.
+Personal portfolio featuring projects across artificial intelligence, fintech, data visualization, agent workflows, retrieval-augmented generation, and interactive products.
 
-## Projects
+## Selected projects
 
-1. **Hello World + AI Chat** — Flask web app with an AI chatbot.
-2. **My Financial Future** — financial dashboard with interactive visualizations.
-3. **MCP Agent Workflow** — exploration of MCP tools and agent/tool interaction.
-4. **AI Study Buddy with RAG** — PDF upload, chunking, embeddings, retrieval, grounded Q&A, voice, and image features.
-5. **AI Games** — Tic-Tac-Toe and Hangman experiences with AI-powered gameplay features.
+1. **Hello World + AI Chat** — Flask web app with an AI chat workflow.
+2. **Financial Future Dashboard** — budgeting and long-term compound-growth visualization.
+3. **MCP Agent Workflow** — tool routing and structured agent/tool interaction.
+4. **AI Study Buddy with RAG** — document chunking, embeddings, retrieval, and grounded Q&A.
+5. **AI Games** — Tic-Tac-Toe and Hangman with computer gameplay, hints, commentary, and fallback logic.
+
+Each project includes a public browser demo under `static/demos/` and a clean source-code folder under `projects/`.
 
 ## Tech
 
-Flask, Python, HTML, CSS, JavaScript, JSON, Chart.js, Azure OpenAI, RAG, embeddings, and GitHub Codespaces.
+Python, Flask, HTML, CSS, JavaScript, JSON, Chart.js, Azure OpenAI, RAG, embeddings, MCP-style tools, GitHub, and AI-assisted development.
 
-## Run locally or in Codespaces
+## Portfolio website
+
+The repository includes a static `index.html` designed for GitHub Pages so the portfolio can be used as a stable resume link without requiring a running Codespace.
+
+After GitHub Pages is enabled for this repository, the expected site URL is:
+
+`https://vishalg7443-gif.github.io/my-portfolio/`
+
+A GitHub Actions workflow in `.github/workflows/pages.yml` deploys the site from `main`.
+
+## Run the Flask version locally
 
 ```bash
+pip install -r requirements.txt
 python app.py
 ```
 
-Then open forwarded port **5001**.
+Then open port **5001**.
 
 ## Contact
 
