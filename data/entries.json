@@ -13,7 +13,7 @@
     "summary": "I built a Flask financial dashboard that uses interactive charts to display budgeting and other financial necessities.",
     "learned": "I learned how to organize information in JSON files, send data from Flask to HTML templates, and use Chart.js to turn numbers that I input into actual charts. I also learned how forms can collect information and calculate personalized results.",
     "coolest": "The coolest part was comparing someone who starts investing at age 18 with someone who starts at age 28 and seeing how much compound interest rewards starting early, because it amounted to a mass amount of difference in money.",
-    "screenshot": "/static/images/uploads/1783985367733_image.png"
+    "screenshot": ""
   },
   {
     "title": "AI Agents & MCP Toolkit",
