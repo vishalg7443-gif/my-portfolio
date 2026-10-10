@@ -1,163 +1,76 @@
 {% extends 'base.html' %}
 
-{% block title %}Vishal Builds | Portfolio{% endblock %}
+{% block title %}Vishal Ghosh | Portfolio{% endblock %}
 
 {% block content %}
 <section class="hero" id="top">
-    <div class="hero-copy">
-        <div class="eyebrow">Economics • AI • Fintech • Entrepreneurship</div>
-        <h1>Building ideas that make technology and finance easier to understand.</h1>
-        <p>I’m Vishal Ghosh, a student exploring artificial intelligence, fintech, entrepreneurship, economics, and product building. This portfolio documents the projects I create, the skills I develop, and the problems I learn to solve.</p>
-        <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore My Projects</a>
-            <a class="button button-secondary" href="#about">About Me</a>
-        </div>
-        <div class="badge-row" aria-label="Core interests">
-            <span class="badge">Artificial Intelligence</span>
-            <span class="badge">Fintech</span>
-            <span class="badge">Product Building</span>
-        </div>
+  <div class="hero-copy">
+    <div class="eyebrow">Economics • AI • Fintech • Product</div>
+    <h1>Building practical products at the intersection of AI, finance, and technology.</h1>
+    <p>I’m Vishal Ghosh, an economics student and product builder in New York City. I use AI-assisted development, Python, Flask, and web technologies to turn ideas into working products and experiments.</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="#projects">View Projects</a>
+      <a class="button button-secondary" href="https://github.com/vishalg7443-gif" target="_blank" rel="noreferrer">GitHub</a>
+      <a class="button button-secondary" href="https://www.linkedin.com/in/vishal-gh/" target="_blank" rel="noreferrer">LinkedIn</a>
     </div>
-
-    <div class="hero-visual" aria-hidden="true">
-        <div class="dashboard">
-            <div class="window-bar"><span></span><span></span><span></span></div>
-            <div class="dashboard-grid">
-                <div class="panel">
-                    <h3>Product Signals</h3>
-                    <div class="chart-bar"><span style="width: 74%"></span></div>
-                    <div class="chart-bar"><span style="width: 58%"></span></div>
-                    <div class="chart-bar"><span style="width: 88%"></span></div>
-                </div>
-                <div class="panel">
-                    <h3>Focus Areas</h3>
-                    <div class="badge-row">
-                        <span class="badge">AI</span>
-                        <span class="badge">Finance</span>
-                        <span class="badge">Data</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="badge-row"><span class="badge">Artificial Intelligence</span><span class="badge">Fintech</span><span class="badge">Product Building</span></div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="dashboard">
+      <div class="window-bar"><span></span><span></span><span></span></div>
+      <div class="dashboard-grid">
+        <div class="panel"><h3>Build</h3><div class="chart-bar"><span style="width:82%"></span></div><div class="chart-bar"><span style="width:66%"></span></div><div class="chart-bar"><span style="width:92%"></span></div></div>
+        <div class="panel"><h3>Focus</h3><div class="badge-row"><span class="badge">AI</span><span class="badge">Finance</span><span class="badge">Data</span></div></div>
+      </div>
     </div>
+  </div>
 </section>
-
-{% if added %}
-<section class="section" aria-label="Entry saved notice">
-    <div class="empty-state" style="border-color: rgba(110,240,200,0.4); color: var(--text);">
-        Your entry was saved and added to the portfolio.
-    </div>
-</section>
-{% endif %}
 
 <section class="section" id="about">
-    <div class="section-heading">
-        <h2>About Me</h2>
-        <p>Hi, I’m Vishal. I’m interested in how technology, finance, and business can work together to solve real problems.</p>
-    </div>
-    <div class="about-grid">
-        <article class="about-card">
-            <p>Hi, I’m Vishal. I’m interested in how technology, finance, and business can work together to solve real problems. I’m especially curious about artificial intelligence, fintech, investing, financial education, entrepreneurship, economics, and digital products.</p>
-            <p>I started learning about technology without having a traditional coding background. Instead of letting that stop me, I began using tools such as Flask, Python, HTML, CSS, GitHub, Codespaces, and AI coding assistants to turn ideas into working projects.</p>
-            <p>I want to continue developing both my technical and business skills. My goal is not only to understand how products work, but also to identify valuable problems, design useful solutions, and build things that people would genuinely use.</p>
-            <p class="eyebrow" style="margin-top: 20px;">Based in New York City</p>
-        </article>
-        <aside class="profile-card about-card" aria-label="Profile summary">
-            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Vishal Ghosh" class="avatar avatar-image">
-            <h3>Vishal Ghosh</h3>
-            <p>Student • Builder • Curious about systems, finance, and product design</p>
-        </aside>
-    </div>
-</section>
-
-<section class="section" id="interests">
-    <div class="section-heading">
-        <h2>What I’m Exploring</h2>
-        <p>I’m building my understanding across technology, business, and human-centered problem solving.</p>
-    </div>
-    <div class="interests-grid">
-        <article class="interest-card"><h3>Artificial Intelligence</h3><p>Learning how AI models, agents, and data-grounded tools can solve real problems.</p></article>
-        <article class="interest-card"><h3>Fintech and Finance</h3><p>Exploring investing, financial products, markets, and tools that make finance easier to understand.</p></article>
-        <article class="interest-card"><h3>Economics</h3><p>Studying how incentives, markets, institutions, and human decisions shape the world.</p></article>
-        <article class="interest-card"><h3>Entrepreneurship</h3><p>Developing ideas, studying customer problems, and learning how useful businesses are built.</p></article>
-        <article class="interest-card"><h3>Product and Technology</h3><p>Turning ideas into websites, dashboards, tools, and user experiences.</p></article>
-        <article class="interest-card"><h3>Financial Literacy</h3><p>Interested in helping people understand investing, saving, budgeting, and long-term financial opportunities.</p></article>
-    </div>
+  <div class="section-heading"><h2>About Me</h2><p>I like learning how technology, markets, and product design connect — then building something that makes the idea tangible.</p></div>
+  <div class="about-grid">
+    <article class="about-card">
+      <p>I’m especially interested in artificial intelligence, fintech, investing, entrepreneurship, economics, and digital products. My projects range from financial dashboards and AI chat experiences to RAG systems, tool-using agents, and interactive games.</p>
+      <p>I approach technical work as a product builder: define the problem, use AI-assisted implementation where it helps, test the workflow, and iterate until the experience is understandable and useful.</p>
+      <p class="eyebrow" style="margin-top:20px;">New York City</p>
+    </article>
+    <aside class="profile-card about-card"><img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Vishal Ghosh" class="avatar avatar-image"><h3>Vishal Ghosh</h3><p>Economics • AI • Fintech • Product Development</p></aside>
+  </div>
 </section>
 
 <section class="section" id="skills">
-    <div class="section-heading">
-        <h2>Skills I’m Building</h2>
-        <p>These are tools and skills I’m actively learning and developing through projects.</p>
-    </div>
-    <div class="skills-grid">
-        <article class="skill-card">
-            <h3>Technical</h3>
-            <div class="skill-list">
-                <span class="skill-pill">Flask</span><span class="skill-pill">Python</span><span class="skill-pill">HTML</span><span class="skill-pill">CSS</span><span class="skill-pill">GitHub</span><span class="skill-pill">GitHub Codespaces</span><span class="skill-pill">JSON</span><span class="skill-pill">Chart.js</span><span class="skill-pill">SQLite</span><span class="skill-pill">AI APIs</span>
-            </div>
-        </article>
-        <article class="skill-card">
-            <h3>Product and Business</h3>
-            <div class="skill-list">
-                <span class="skill-pill">User research</span><span class="skill-pill">Product thinking</span><span class="skill-pill">Financial analysis</span><span class="skill-pill">Data visualization</span><span class="skill-pill">Entrepreneurship</span><span class="skill-pill">Presentation</span><span class="skill-pill">Problem solving</span><span class="skill-pill">AI-assisted development</span>
-            </div>
-        </article>
-    </div>
+  <div class="section-heading"><h2>Skills & Tools</h2><p>Tools I use to prototype, analyze, and ship projects.</p></div>
+  <div class="skills-grid">
+    <article class="skill-card"><h3>Technical</h3><div class="skill-list"><span class="skill-pill">Python</span><span class="skill-pill">Flask</span><span class="skill-pill">HTML</span><span class="skill-pill">CSS</span><span class="skill-pill">JavaScript</span><span class="skill-pill">JSON</span><span class="skill-pill">Chart.js</span><span class="skill-pill">SQLite</span><span class="skill-pill">GitHub</span><span class="skill-pill">AI APIs</span><span class="skill-pill">RAG</span><span class="skill-pill">MCP</span></div></article>
+    <article class="skill-card"><h3>Product & Business</h3><div class="skill-list"><span class="skill-pill">Product Thinking</span><span class="skill-pill">User Research</span><span class="skill-pill">Financial Analysis</span><span class="skill-pill">Data Visualization</span><span class="skill-pill">Market Research</span><span class="skill-pill">Presentation</span><span class="skill-pill">Problem Solving</span><span class="skill-pill">AI-assisted Development</span></div></article>
+  </div>
 </section>
 
 <section class="section" id="projects">
-    <div class="section-heading">
-        <h2>Projects and Experiments</h2>
-        <p>Each project represents something new I learned, tested, or built. This portfolio is a record of my progress—not just the finished results.</p>
-    </div>
-
-    {% if entries %}
-    <div class="projects-grid">
-        {% for entry in entries %}
-        <article class="project-card">
-            <div class="project-meta">
-                <span class="tag">Project {{ loop.index }}</span>
-                {% for tag in get_entry_tags(entry) %}
-                <span class="tag">{{ tag }}</span>
-                {% endfor %}
-                <span class="tag">{{ entry.date or 'Undated' }}</span>
-            </div>
-            <h3>{{ entry.title }}</h3>
-            <p><strong>What I built</strong><br>{{ entry.summary }}</p>
-            {% if entry.learned %}<p><strong>What I learned</strong><br>{{ entry.learned }}</p>{% endif %}
-            {% if entry.coolest %}<p><strong>Coolest thing</strong><br>{{ entry.coolest }}</p>{% endif %}
-            <div class="project-image" role="img" aria-label="Project preview for {{ entry.title }}">
-                {% if entry.screenshot %}<img src="{{ entry.screenshot }}" alt="Screenshot for {{ entry.title }}">{% else %}<span>Project preview</span>{% endif %}
-            </div>
-            <div class="project-links">
-                <a href="/entry/{{ loop.index0 }}">View details</a>
-                {% if entry.project_link %}<a href="{{ entry.project_link }}" target="_blank" rel="noreferrer">Project link</a>{% endif %}
-                {% if entry.github_link %}<a href="{{ entry.github_link }}" target="_blank" rel="noreferrer">GitHub</a>{% endif %}
-            </div>
-        </article>
-        {% endfor %}
-    </div>
-    {% else %}
-    <div class="empty-state"><p>My next project will appear here.</p></div>
-    {% endif %}
-</section>
-
-<section class="section" id="journey">
-    <div class="section-heading"><h2>My Building Journey</h2><p>A brief timeline of how this portfolio and my skills are growing.</p></div>
-    <div class="timeline">
-        <article class="timeline-card"><h3>1. Learning the foundations</h3><p>Understanding Flask, routes, templates, HTML, CSS, and how a web application fits together.</p></article>
-        <article class="timeline-card"><h3>2. Working with data</h3><p>Using JSON, forms, dashboards, and charts to turn information into something visual and useful.</p></article>
-        <article class="timeline-card"><h3>3. Building with AI</h3><p>Learning how AI tools can help create, explain, and improve applications while still reviewing and understanding the work.</p></article>
-        <article class="timeline-card"><h3>4. Becoming a stronger builder</h3><p>Combining economics, business thinking, product design, and technology to create projects with real-world value.</p></article>
-    </div>
-</section>
-
-<section class="section">
-    <article class="goal-card">
-        <h2>What I Want to Build Next</h2>
-        <p>I want to create tools at the intersection of AI, finance, and education—especially products that make complicated information easier for everyday people to understand and use.</p>
-        <div class="callout">Current focus: becoming better at turning an idea into a complete, usable product.</div>
+  <div class="section-heading"><h2>Selected Projects</h2><p>Five projects showing how I combine product thinking with AI, finance, data, and interactive software.</p></div>
+  <div class="projects-grid">
+    {% for entry in entries %}
+    <article class="project-card">
+      <div class="project-meta"><span class="tag">Project {{ loop.index }}</span>{% for tag in get_entry_tags(entry) %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
+      <h3>{{ entry.title }}</h3>
+      <p>{{ entry.summary }}</p>
+      {% if entry.learned %}<p><strong>Skills used</strong><br>{{ entry.learned }}</p>{% endif %}
+      <div class="project-image" role="img" aria-label="Project preview for {{ entry.title }}">{% if entry.screenshot %}<img src="{{ entry.screenshot }}" alt="Screenshot for {{ entry.title }}">{% else %}<span>Project preview</span>{% endif %}</div>
+      <div class="project-links">
+        <a href="/entry/{{ loop.index0 }}">Details</a>
+        {% if entry.project_link %}<a href="{{ entry.project_link }}" target="_blank" rel="noreferrer">Project link</a>{% endif %}
+        {% if entry.github_link %}<a href="{{ entry.github_link }}" target="_blank" rel="noreferrer">GitHub</a>{% endif %}
+      </div>
     </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <article class="goal-card">
+    <h2>Let’s Connect</h2>
+    <p>I’m interested in opportunities involving AI, fintech, product development, business, and technology.</p>
+    <div class="hero-actions"><a class="button button-primary" href="mailto:vishalg7443@gmail.com">Email Me</a><a class="button button-secondary" href="https://www.linkedin.com/in/vishal-gh/" target="_blank" rel="noreferrer">LinkedIn</a><a class="button button-secondary" href="https://github.com/vishalg7443-gif" target="_blank" rel="noreferrer">GitHub</a></div>
+  </article>
 </section>
 {% endblock %}
