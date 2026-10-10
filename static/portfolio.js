@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       </div>`,
-    'My Financial Future Data & Visualization': `
+    'Financial Future Dashboard': `
       <div class="project-preview">
         <div class="preview-label">Financial Dashboard</div>
         <div class="preview-window">
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="preview-window">
           <div class="agent-map">
             <div class="agent-node">User prompt</div><div class="agent-arrow">→</div>
-            <div class="agent-node">AI agent</div><div class="agent-arrow">→</div>
-            <div class="agent-node">MCP tool</div>
+            <div class="agent-node">Agent router</div><div class="agent-arrow">→</div>
+            <div class="agent-node">Tool result</div>
           </div>
         </div>
       </div>`,
@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="preview-label">RAG Study Assistant</div>
         <div class="preview-window">
           <div class="rag-flow">
-            <div class="rag-step">PDF<br>upload</div>
+            <div class="rag-step">Document</div>
             <div class="rag-step">Retrieve<br>context</div>
             <div class="rag-step">Grounded<br>answer</div>
           </div>
-          <div class="rag-answer">Question → relevant document chunks → answer based on the source.</div>
+          <div class="rag-answer">Question → relevant chunks → grounded answer.</div>
         </div>
       </div>`,
     'AI Games: Tic-Tac-Toe & Hangman': `
@@ -58,18 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="tic-cell"></div><div class="tic-cell">O</div><div class="tic-cell"></div>
           </div>
           <div class="game-copy">
-            <div class="game-pill">AI opponent</div>
+            <div class="game-pill">Computer opponent</div>
             <div class="game-pill">Hints + commentary</div>
-            <div class="game-pill">Leaderboard + recap</div>
+            <div class="game-pill">Score tracking</div>
           </div>
         </div>
       </div>`
-  };
-
-  const linkLabels = {
-    'MCP Agent Workflow': 'Open MCP code',
-    'AI Study Buddy with RAG': 'Open RAG app code',
-    'AI Games: Tic-Tac-Toe & Hangman': 'Open game code'
   };
 
   document.querySelectorAll('.project-card').forEach((card) => {
@@ -83,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = [...card.querySelectorAll('.project-links a')];
     const projectLink = links.find((link) => link.textContent.trim() === 'Project link');
     const githubLink = links.find((link) => link.textContent.trim() === 'GitHub');
-    if (projectLink && title) projectLink.textContent = linkLabels[title] || 'Open project';
-    if (githubLink) githubLink.textContent = 'GitHub repo';
+    if (projectLink) projectLink.textContent = title?.includes('Games') ? 'Play demo' : 'Live demo';
+    if (githubLink) githubLink.textContent = 'Source code';
   });
 });
