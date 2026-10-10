@@ -16,11 +16,11 @@
     "screenshot": ""
   },
   {
-    "title": "AI Agents & MCP Toolkit",
+    "title": "MCP Agent Workflow",
     "date": "2026-07-14",
-    "summary": "Built MCP tools and an AI agent workflow that lets an AI discover and call tools instead of only generating text.",
+    "summary": "Explored MCP tools and an AI agent workflow that lets an AI discover and call tools instead of only generating text.",
     "learned": "I learned how MCP servers expose Python functions as tools, how clear tool descriptions guide an agent's decisions, and how an agent can discover and call tools dynamically.",
-    "coolest": "The coolest part was seeing the AI decide when to call a tool and use the result as part of its response instead of acting like a normal chatbot.",
+    "coolest": "The coolest part was seeing how an AI agent can decide when a tool is useful and incorporate the tool result into its response.",
     "screenshot": "",
     "tags": ["AI", "MCP", "Agents"]
   },
